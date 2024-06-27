@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/style-Funcionario.css">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Funcionarios</h1>
+
+    <button type="button" class="btn btn-success" id="btnCreate">Criar Funcionario</button>
+    <!-- Local da criação do Funcionario-->
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nome</th>
+                <th>Cargo</th>
+            </tr>
+        </thead>
+        <tbody id="itemTable">
+            
+        </tbody>
+    </table>
+
+    <!-- Pop-up -->
+    <div id="popup" class="popup">Informação adicional</div>
+
+    <!-- Criar/Editar -->
+    <div id="CrudFuncionario" class="Funcionario">
+        <div class="Funcionario-content">
+            <span class="close">&times;</span>
+            <h2 id="FuncionarioTitle">Criar Item</h2>
+            <form id="crudForm">
+                <input type="hidden" id="itemId">
+                <div>
+                    <label for="itemName">Nome:</label>
+                    <input type="text" id="itemName" required>
+                    <label for="itemIdade">Idade:</label>
+                    <input type="number" id="itemIdade" required>
+                    <label for="itemTel">Telefone:</label>
+                    <input type="tel" id="itemTel" required>
+                    <label for="itemSexo">Sexo:</label>
+                    <input type="text" id="itemSexo" required>
+                    <label for="itemCargo">Cargo:</label>
+                    <input type="text" id="itemCargo" required>
+                </div>
+                <button class="btn btn-primary" type="submit">Salvar</button>
+            </form>
+        </div>
+    </div>
+    <script src="../JS/Funcionarios.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

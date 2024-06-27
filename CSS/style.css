@@ -1,0 +1,11 @@
+body{
+    margin: 0px 10px;
+    height: 96.9vh;
+    background-image: linear-gradient(to bottom, rgb(0, 255, 170) , white);
+}
+button{
+    margin: 15px;
+}
+h1{
+    margin: 20px 0px 0px 0px;
+}
