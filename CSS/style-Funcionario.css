@@ -72,6 +72,23 @@ th, td {
     border-color: white transparent transparent transparent;
 }
 
+/* Estilo para deixar a tabela transparente com bordas visíveis */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+table, th, td {
+    border: 1px solid #ddd;
+}
+th, td {
+    padding: 8px;
+    text-align: left;
+    background-color: rgba(255, 255, 255, 0.5); /* Fundo da célula com transparência */
+}
+th {
+    background-color: rgba(0, 0, 0, 0.1); /* Fundo do cabeçalho com transparência */
+}
+
 input{
     justify-content: center;
     flex-direction: column;
