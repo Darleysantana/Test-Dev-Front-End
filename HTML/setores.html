@@ -24,6 +24,9 @@
         </tbody>
     </table>
 
+    <!-- Pop-up -->
+    <div id="popup" class="popup">Informação adicional</div>
+
     <!-- Criar/Editar -->
     <div id="Crudsetor" class="setor">
         <div class="setor-content">
@@ -34,10 +37,17 @@
                 <div>
                     <label for="itemName">Nome:</label>
                     <input type="text" id="itemName" required>
+                    <label for="itemFuncionario">Quantidade de Funcionario Nesse Setor:</label>
+                    <input type="text" id="itemFuncionario" required>
+                    <div id="containerCargos">
+                        <label for="itemCargo">Cargos:</label>
+                        <input type="text" id="itemCargo" class="form-control mt-2" placeholder="Digite os cargos separados por vírgula">
+                    </div>
                 </div>
                 <button class="btn btn-primary" type="submit">Salvar</button>
             </form>
         </div>
+        
     </div>
     <script src="../JS/setores.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

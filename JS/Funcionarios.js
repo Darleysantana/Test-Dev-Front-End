@@ -1,4 +1,8 @@
-let items = [];
+let items = [
+    { id: 1, name: 'Alice', Cargo: 'Desenvolvedora', idade: 30, telefone: '1234-5678', sexo: 'Feminino' },
+    { id: 2, name: 'Bob', Cargo: 'Designer', idade: 25, telefone: '8765-4321', sexo: 'Masculino' },
+    { id: 3, name: 'Carlos', Cargo: 'Gerente', idade: 40, telefone: '1122-3344', sexo: 'Masculino' }
+];
 let currentIndex = -1;
 
 document.getElementById('btnCreate').onclick = function() {
@@ -131,4 +135,8 @@ document.addEventListener('DOMContentLoaded', () => {
     tableBody.addEventListener('mouseout', () => {
         popup.style.display = 'none';
     });
+
+    // Renderiza a tabela ao carregar a página
+    renderTable();
 });
+
